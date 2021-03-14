@@ -1,0 +1,30 @@
+#nav-bar {
+  background-color: black !important;
+  opacity: 0.9;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login {
+  margin-top: 120px;
+  width: 100vw;
+  height: 200vh;
+}
+
+.login {
+  margin-top: 120px;
+  width: 100vw;
+  height: 200vh;
+}
+
+.about {
+  margin-top: 90px;
+}
+
+.contact {
+  margin-top: 90px;
+}
+
