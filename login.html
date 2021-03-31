@@ -33,7 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html" style="color: var(--white);">contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="faq.html" style="color: var(--white);">Faq</a></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#" style="color: var(--white);">More&nbsp;</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">One way</a><a class="dropdown-item" href="#">Paired Donation</a><a class="dropdown-item" href="#">Kidney chain</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">One way</a><a class="dropdown-item" href="paired-donation.html">Paired Donation</a><a class="dropdown-item" href="kidney-chain.html">Kidney chain</a></div>
                     </li>
                 </ul><span class="navbar-text actions"> <a class="login" href="login.html" style="color: var(--white);">Log In</a><a class="btn btn-light action-button" role="button" href="donate.html">Donate</a></span>
             </div>
@@ -46,8 +46,8 @@
                 <h4 style="color: var(--red);margin-bottom: 0px;font-weight: 400;font-size: 12px;">only authorized medical personnel</h4>
             </div>
             <div class="login-box-content">
-                <div class="fb-login box-shadow"></div>
-                <div class="gp-login box-shadow"><a class="d-flex flex-row align-items-center social-login-link" style="margin-bottom:10px;" href="#"><i class="fa fa-google" style="color:rgb(255,255,255);width:56px;"></i>Login with Google</a></div>
+
+                <button class="gp-login box-shadow" onclick="googleSignin()"><a class="d-flex flex-row align-items-center social-login-link" style="margin-bottom:10px;" ><i class="fa fa-google" style="color:rgb(255,255,255);width:56px;"></i>Login with Google </a></button>
             </div>
             <div class="d-flex flex-row align-items-center login-box-seperator-container">
                 <div class="login-box-seperator"></div>
@@ -57,8 +57,10 @@
                 <div class="login-box-seperator"></div>
             </div>
 
-            <div class="email-login" style="background-color:#ffffff;"><input type="email" id="email-auth" class="email-imput form-control" style="margin-top:10px;" required="yes" placeholder="Email" minlength="6"><input type="password" id="pass-auth" class="password-input form-control" style="margin-top:10px;"
-                    required="yes" placeholder="Password" minlength="6"></div>
+            <div class="email-login" style="background-color:#ffffff;">
+                <input type="email" id="email-auth" class="email-imput form-control" style="margin-top:10px;" required="yes" placeholder="Email" minlength="6">
+                <input type="password" id="pass-auth" class="password-input form-control" style="margin-top:10px;" required="yes" placeholder="Password" minlength="6">
+            </div>
             <div class="submit-row" style="margin-bottom:8px;padding-top:0px;"><button class="btn btn-primary btn-block box-shadow" id="submit-id-submit" type="submit" onclick="login()">Login</button>
                 <div class="d-flex justify-content-between">
                     <div class="form-check form-check-inline" id="form-check-rememberMe"><input class="form-check-input" type="checkbox" id="formCheck-1" for="remember" style="cursor:pointer;" name="check"><label class="form-check-label" for="formCheck-1"><span class="label-text">Remember Me</span></label></div><a id="forgot-password-link"
